@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para ti, mi amor 💖</title>
+  <style>
+    body {
+      background-color: #fff0f5;
+      font-family: 'Courier New', monospace;
+      color: #d63384;
+      text-align: center;
+      padding: 40px;
+    }
+
+    #contenido {
+      white-space: pre;
+      font-size: 18px;
+    }
+
+    .oculto {
+      display: none;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #ff1493;
+    }
+  </style>
+</head>
+<body>
+  <h1>💌 Para ti, mi amor 💌</h1>
+  <div id="contenido">
+    <!-- Aquí se mostrará el contenido con pausa -->
+  </div>
+
+  <script>
+    const lineas = [
+      "  *****     *****  ",
+      " *******   ******* ",
+      "********* *********",
+      "*******************",
+      " ***************** ",
+      "  ***************  ",
+      "   *************   ",
+      "    ***********    ",
+      "     *********     ",
+      "      *******      ",
+      "       *****       ",
+      "        ***        ",
+      "         *         ",
+      "",
+      "Para ti mi amor 💖",
+      "Eres la razón por la que sonrío cada día :)",
+      "Gracias por estar a mi lado",
+      "Te amo mucho 💕"
+    ];
+
+    const contenedor = document.getElementById("contenido");
+
+    let i = 0;
+    function mostrarLinea() {
+      if (i < lineas.length) {
+        contenedor.innerText += lineas[i] + "\n";
+        i++;
+        setTimeout(mostrarLinea, 3000); // 3 segundos
+      }
+    }
+
+    mostrarLinea();
+  </script>
+</body>
+</html>
